@@ -17,9 +17,9 @@ trimming:
 
 ref:
   # the STAR index
-  index: "path/to/star/index"
+  index: "genome/STAR_index"
   # gtf file with transcripts
-  annotation: "path/to/annotation.gtf"
+  annotation: "genome/GCA_000149865.1_BD_JEL423_genomic.gtf"
 
 pca:
   labels:
@@ -29,9 +29,9 @@ pca:
 diffexp:
   # contrasts for the deseq2 results method
   contrasts:
-    treated-vs-untreated:
-      - treated
-      - untreated
+    JEL422-vs-CLFT001:
+      - JEL422 
+      - CLFT001
 
 params:
   star: ""

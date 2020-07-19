@@ -1,3 +1,7 @@
+# Bd RNASeq example STAR + Snakemake pipeline
+# Below are the instructions from original package
+
+
 # Snakemake workflow: rna-seq-star-deseq2
 
 [![Snakemake](https://img.shields.io/badge/snakemake-≥5.2.1-brightgreen.svg)](https://snakemake.bitbucket.io)
