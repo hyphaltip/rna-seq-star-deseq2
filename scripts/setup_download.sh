@@ -19,7 +19,7 @@ module load hmmer/3
 module load samtools
 esl-sfetch --index JEL423_w_virus.fasta
 samtools faidx JEL423_w_virus.fasta
-module load STAR
+module load STAR/2.5.3a
 
 mkdir -p STAR_index
 STAR --runMode genomeGenerate --runThreadN 16 --genomeFastaFiles $(realpath JEL423_w_virus.fasta) --genomeDir $(realpath STAR_index) --sjdbGTFfile $(realpath GCA_000149865.1_BD_JEL423_genomic.gtf) --sjdbOverhang 99

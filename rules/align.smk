@@ -28,5 +28,6 @@ rule align:
         extra="--quantMode GeneCounts --sjdbGTFfile {} {}".format(
               config["ref"]["annotation"], config["params"]["star"])
     threads: 24
+    mem: 8gb
     wrapper:
         "0.19.4/bio/star/align"
